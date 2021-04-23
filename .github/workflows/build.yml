@@ -1,4 +1,4 @@
-name: C-Build
+name: Build
 
 on:
   push:
@@ -16,4 +16,4 @@ jobs:
     - name: get_avr-gcc
       run: sudo apt-get install gcc-avr binutils-avr avr-libc
     - name: make
-      run: make all -C 3_Implementation
+      run: make all -C activity_1
