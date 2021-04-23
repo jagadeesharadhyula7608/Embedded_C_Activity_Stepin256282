@@ -48,7 +48,7 @@ analysis: $(SRC)
 	cppcheck --enable=all $^
 
 doc:
-	#Build the code code documentation using Doxygen command line utility
+	#Build the code documentation using Doxygen command line utility
 	make -C documentation
 
 clean:
