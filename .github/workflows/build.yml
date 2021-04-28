@@ -1,10 +1,10 @@
-name: Compile-Linux
+name: C-Build
 
 on:
   push:
-    branches: [ main ]
+    branches: [ master ]
   pull_request:
-    branches: [ main ]
+    branches: [ master ]
 
 jobs:
   build:
@@ -16,4 +16,5 @@ jobs:
     - name: get_avr-gcc
       run: sudo apt-get install gcc-avr binutils-avr avr-libc
     - name: Compile
-      run: make
+    - name: make
+      run: make all
