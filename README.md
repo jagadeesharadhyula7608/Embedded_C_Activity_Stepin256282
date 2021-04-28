@@ -1,8 +1,4 @@
-<<<<<<< HEAD
-# Embedded C Programming Examples
-=======
 # Embedded Systems Activitiy repository
->>>>>>> ad0a986ac8a5da2867563d2bb1c2644335af0c44
 
 # LED Blinking with swicting
 
