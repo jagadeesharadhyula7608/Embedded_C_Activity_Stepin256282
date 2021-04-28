@@ -1,10 +1,10 @@
-PROJ_NAME = Switch_Blink
+PROJ_NAME = SeatHeatingApp
 
 BUILD_DIR = Build
 
 # All Source code files
-SRC = mainActivity.c\
-src/user_utilities.c
+SRC = SeatHeatingApp.c\
+src/gpio.c
 
 # All header file paths
 INC = -I inc
