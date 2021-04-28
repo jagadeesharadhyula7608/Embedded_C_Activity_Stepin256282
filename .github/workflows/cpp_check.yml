@@ -17,5 +17,3 @@ jobs:
       run: sudo apt-get install cppcheck
     - name: Code Quality
       run: make analysis
-
-      run: make distcheck
