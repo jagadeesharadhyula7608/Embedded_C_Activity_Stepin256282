@@ -1,10 +1,5 @@
 # Embedded Systems Activitiy repository
-
-# LED Blinking with swicting
-
 ## In Action
-
-
 #### CI and Code Quality
 
 |Build|Cppcheck|Codacy|
