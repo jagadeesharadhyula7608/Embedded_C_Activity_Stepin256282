@@ -1,7 +1,17 @@
 #ifndef GPIO_H_INCLUDED
 #define GPIO_H_INCLUDED
 
-void gpio(void);
+
+# define LED_ON 1;
+#define LED_OFF 0;
+
+typedef struct
+{
+    int state;
+    uint16_t adcvalue;
+}act_out;
+void gpio(act_out *);
+void peripheral_init(void);
 
 
 #endif // GPIO_H_INCLUDED

@@ -1,6 +1,5 @@
 #include <avr/io.h>
 #include "gpio.h"
-
 void peripheral_init(void)
 {
 	/* Configure LED Pin */
@@ -10,20 +9,17 @@ void peripheral_init(void)
 	/* logic high to ports PD0, PD4 */
 	PORTD|=(1<<DDD0)|(1<<DDD1);
 }
-void gpio(void)
+void gpio(act_out *ptr)
 {
-peripheral_init();
-    while(1)
-    {
-        if(!((PIND&(1<<DDD0)) || (PIND&(1<<DDD1))  ))
+        if(!((PIND&(1<<DDD0)) || (PIND&(1<<DDD1))  ))// checking for the status of switch position
         {
-            PORTB|=(1<<DDB0);
+            PORTB|=(1<<DDB0);//Turning on the LED
+            ptr->state=LED_ON;
 
         }
     else{
-       PORTB&=~(1<<DDB0);
-
+       PORTB&=~(1<<DDB0);//Turning off the LED
+       ptr->state=LED_OFF;
     }
     }
-}
 
