@@ -3,8 +3,8 @@ PROJ_NAME = SeatHeatingApp
 BUILD_DIR = Build
 
 # All Source code files
-SRC = SeatHeatingApp.c\
-src/gpio.c
+SRC = src/gpio.c src/adc.c SeatHeatingApp.c
+
 
 # All header file paths
 INC = -I inc
