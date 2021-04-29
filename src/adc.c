@@ -19,10 +19,11 @@ return(ADC);
 }
 
 
-void adc(void)
+uint16_t adc(void)
 {
 uint16_t a;
 initAdc();
     while(1)
         a=readAdc(0);
+    return a;
 }
