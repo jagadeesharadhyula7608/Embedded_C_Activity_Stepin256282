@@ -1,4 +1,8 @@
 # Embedded Systems Activitiy repository
+
+
+![circuit](https://user-images.githubusercontent.com/36735523/116650565-0a24a500-a99f-11eb-9517-0a66dc325fff.png)
+
 ## In Action
 #### CI and Code Quality
 
