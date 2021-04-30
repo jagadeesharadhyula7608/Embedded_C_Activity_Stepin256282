@@ -2,7 +2,7 @@
 #include "gpio.h"
 #include "adc.h"
 #include "pwm.h"
-#include "util/delay.h"
+#include "uart.h"
 
 
 int main()
@@ -17,6 +17,7 @@ int main()
        gpio(ptr);//calling gpio function to sense the swicthes position
        adc(ptr);//Read the ADC values from sensor
        pwm(ptr);//Generate PWM pulse w.r.t t digital values
+       uart(ptr);// Printing the Temperature Values to the serial Monitor
     }
     
     return 0;

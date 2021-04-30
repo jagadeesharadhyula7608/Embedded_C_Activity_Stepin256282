@@ -14,18 +14,22 @@ void pwm(act_out * value)
     if(value->adcvalue>0 && value->adcvalue<=200)
     {
       OCR0A=D20;
+      value->temperature=20;
     }
     else if(value->adcvalue>210 && value->adcvalue<=500)
     {
       OCR0A=D40;
+      value->temperature=25;
     }
    else if(value->adcvalue>510 && value->adcvalue<=700)
     {
       OCR0A=D70;
+      value->temperature=29;
     }
     else if(value->adcvalue>710 && value->adcvalue<=1024)
     {
       OCR0A=D95;
+      value->temperature=33;
     }
     _delay_ms(500);
 }

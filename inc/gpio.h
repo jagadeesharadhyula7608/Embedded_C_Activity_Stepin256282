@@ -7,8 +7,9 @@
 
 typedef struct
 {
-    int state;
+    int  state:1;
     uint16_t adcvalue;
+    int temperature;
 }act_out;
 void gpio(act_out *);
 void peripheral_init(void);
