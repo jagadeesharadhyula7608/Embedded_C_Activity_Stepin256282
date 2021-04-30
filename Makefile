@@ -53,6 +53,5 @@ doc:
 
 clean:
 	# Remove all the build files and generated document files
-	$(RM) $(call FixPath,$(BUILD_DIR)/*)
+	rm -rf $(call FixPath,$(BUILD_DIR)/*)
 	make -C documentation clean
-	rmdir $(BUILD_DIR)

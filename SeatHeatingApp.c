@@ -21,7 +21,6 @@
 
 int main()
 {
-    uint16_t temp_value;
     act_out s1;
     act_out *ptr=&s1;
     peripheral_init();
