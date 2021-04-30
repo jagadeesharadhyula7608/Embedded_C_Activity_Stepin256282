@@ -4,10 +4,10 @@
 
 void initUart(void)
 {
-    UBRR0L=BAUDRATE;
+    UBRR0L=BAUDRATE;// Setting buade rate 
     UBRR0H=(BAUDRATE>>8);
-    UCSR0C|=(1<<UCSZ01)|(1<<UCSZ01);
-    UCSR0B|=(1<<RXEN0)|(1<<TXEN0)|(1<<RXCIE0)|(1<<TXCIE0);
+    UCSR0C|=(1<<UCSZ01)|(1<<UCSZ01);// Setting 8-bit DATA
+    UCSR0B|=(1<<RXEN0)|(1<<TXEN0)|(1<<RXCIE0)|(1<<TXCIE0);// Enable the RX TX and RXIF,TXIF
 }
 void usartWriteTemp(int a)
     {
@@ -15,13 +15,13 @@ void usartWriteTemp(int a)
     {
         // WAIT UNTILL TRANSMITER IS EMPTY
     }
-    UDR0=a;
+    UDR0=a;// write data to UDR register
 }
 void uart(act_out * t)
 {
-    if(t->state)
+    if(t->state)// Checking for LED ON status 
     {
-    if(t->temperature==20)
+    if(t->temperature==20)// Checking for the temperature values from sensor
     {
         usartWriteTemp(20);
     }

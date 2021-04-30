@@ -3,7 +3,11 @@
 #include "adc.h"
 #include "pwm.h"
 #include "uart.h"
-
+/**
+ * @brief 
+ * Main File for runing all the Activities
+ * @return int 
+ */
 
 int main()
 {
