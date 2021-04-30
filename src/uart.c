@@ -16,7 +16,7 @@ void initUart(void)
 {
     UBRR0L=BAUDRATE;// Setting buade rate 
     UBRR0H=(BAUDRATE>>8);
-    UCSR0C|=(1<<UCSZ01)|(1<<UCSZ01);// Setting 8-bit DATA
+    UCSR0C|=(1<<UCSZ01)|(1<<UCSZ00);// Setting 8-bit DATA
     UCSR0B|=(1<<RXEN0)|(1<<TXEN0)|(1<<RXCIE0)|(1<<TXCIE0);// Enable the RX TX and RXIF,TXIF
 }
 void usartWriteTemp(int a)
