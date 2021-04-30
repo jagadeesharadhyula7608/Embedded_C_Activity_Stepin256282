@@ -1,3 +1,13 @@
+/**
+ * @file SeatHeatingApp.c
+ * @author jagadeesh (jagadeesharadhyula7608@gmail.com)
+ * @brief  Main File for exceuting the activities
+ * @version 0.1
+ * @date 2021-04-30
+ * 
+ * @copyright Copyright (c) 2021
+ * 
+ */
 #include <avr/io.h>
 #include "gpio.h"
 #include "adc.h"

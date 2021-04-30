@@ -1,3 +1,13 @@
+/**
+ * @file adc.c
+ * @author jagadeesh(jagadeesharadhyula7608@gmail.com)
+ * @brief  ADC operation
+ * @version 0.1
+ * @date 2021-04-30
+ * 
+ * @copyright Copyright (c) 2021
+ * 
+ */
 #include <avr/io.h>
 #include "adc.h"
 uint16_t readAdc(uint8_t ch)

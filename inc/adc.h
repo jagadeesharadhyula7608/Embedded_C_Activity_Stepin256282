@@ -1,6 +1,15 @@
 #ifndef ADC_H_INCLUDED
 #define ADC_H_INCLUDED
-
+/**
+ * @file adc.h
+ * @author jagadeesh (jagadeesharadhyula7608@gmail.com)
+ * @brief Header file for ADC Module
+ * @version 0.1
+ * @date 2021-04-30
+ * 
+ * @copyright Copyright (c) 2021
+ * 
+ */
 #include "gpio.h"
 /**
  * @brief 

@@ -1,3 +1,13 @@
+/**
+ * @file pwm.c
+ * @author jagadeesh (jagadeesharadhyula7608@gmail.com)
+ * @brief Pwm operation
+ * @version 0.1
+ * @date 2021-04-30
+ * 
+ * @copyright Copyright (c) 2021
+ * 
+ */
 #include <avr/io.h>
 #include "pwm.h"
 #include "util/delay.h"

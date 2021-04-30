@@ -1,3 +1,13 @@
+/**
+ * @file uart.c
+ * @author jagadeesh (jagadeesharadhyula7608@gmail.com)
+ * @brief Uart operation
+ * @version 0.1
+ * @date 2021-04-30
+ * 
+ * @copyright Copyright (c) 2021
+ * 
+ */
 #include <avr/io.h>
 #include "uart.h"
 #include "util/delay.h"

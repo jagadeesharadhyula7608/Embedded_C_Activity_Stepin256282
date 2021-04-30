@@ -1,3 +1,13 @@
+/**
+ * @file uart.h
+ * @author jagadeesh (jagadeesharadhyula7608@gmail.com)
+ * @brief header file for UART Module
+ * @version 0.1
+ * @date 2021-04-30
+ * 
+ * @copyright Copyright (c) 2021
+ * 
+ */
 #ifndef UART_H_INCLUDED
 #define UART_H_INCLUDED
 
