@@ -25,6 +25,7 @@ int main()
     act_out *ptr=&s1;
     peripheral_init();
     initpwm();
+    initUart();
     while (1)
     {
        gpio(ptr);//calling gpio function to sense the swicthes position
